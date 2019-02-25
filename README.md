@@ -30,7 +30,8 @@ git 分支合并测试命令行工具，用于在正式合并分支之前，进�
 
 ###  运行方式
 
-可以直接使用提供的二进制编译脚本启动，提供 Unix 和 Window 可运行的 shell 脚本和 bat 脚本，该工具的启动参数使用xml配置文件，没错就是因为我懒….
+可以直接使用提供的二进制编译脚本启动，提供 Unix 和 Window 可运行的 shell 脚本和 bat 脚本，该工具的启动参数使用xml配置文件，没错就是因为我懒….  
+<a href="https://github.com/Al-assad/git-pre-merge-tool/releases">二进制包和启动脚本下载地址</a>
 
 #### 1. 配置运行参数
 
