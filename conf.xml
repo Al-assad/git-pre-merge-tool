@@ -1,0 +1,18 @@
+<conf>
+    <!--clone的本地仓库临时储存目录-->
+    <templateFilePath>./tempRepo</templateFilePath>
+
+    <!--git远程仓库登录信息-->
+    <username>yulinying@sample.com</username>
+    <password>123456</password>
+
+    <!--合并仓库分支信息-->
+    <repositories>
+        <repo>
+            <remoteUrl>https://github.com/Al-assad/ask.git</remoteUrl>
+            <baseBranch>merge_test_1</baseBranch>
+            <targetBranch>release</targetBranch>
+        </repo>
+    </repositories>
+
+</conf>

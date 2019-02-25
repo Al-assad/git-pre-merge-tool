@@ -1,0 +1,41 @@
+plugins {
+    id 'groovy'
+    id 'java'
+    id 'application'
+}
+
+group 'site.assad'
+version '0.8'
+
+sourceCompatibility = 1.8
+compileJava.options.encoding = "UTF-8"
+mainClassName = 'site.assad.githandle.xmlshell.Main'
+
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.3.11'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'org.eclipse.jgit:org.eclipse.jgit:5.0.3.201809091024-r'
+    compile 'org.eclipse.jgit:org.eclipse.jgit.archive:5.0.3.201809091024-r'
+    compile 'org.slf4j:slf4j-simple:1.7.21'
+    compile 'commons-io:commons-io:2.6'
+    compile 'org.apache.commons:commons-lang3:3.8'
+    compile 'org.apache.commons:commons-collections4:4.1'
+    compile 'com.google.code.findbugs:jsr305:3.0.2'
+    compile 'org.codehaus.groovy:groovy-all:2.5.4'
+
+}
+
+distZip {
+    copy {
+        from 'conf.xml'
+        into "build/scripts"
+    }
+}
+
+
